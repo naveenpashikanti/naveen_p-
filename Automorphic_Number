@@ -1,0 +1,11 @@
+#code
+t= int(raw_input())
+for i in xrange(t):
+    n=int(raw_input())
+    k=n
+    n=n%100
+    l=len(str(k))
+    if (n*n+2*100*n*(k/100))%(10**l)==k :
+        print 'Automorphic'
+    else :
+        print 'Not Automorphic'

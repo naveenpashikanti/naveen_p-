@@ -1,0 +1,20 @@
+#t=int(raw_input())
+#for i in xrange(t) :
+ #   n=int(raw_input())
+  #  k=len(str(n))
+   # print int(str(n[k-1]))+int(str(n[0]))
+
+def bl(n) :
+    if n<12 :
+        return n
+    if n==12 :
+        return n+1
+    else :
+        return (bl(n/2)+bl(n/3)+bl(n/4))
+k=1
+while k:
+    n=int(raw_input())
+    print bl(n)
+    if n<0 :
+        k=0
+    
